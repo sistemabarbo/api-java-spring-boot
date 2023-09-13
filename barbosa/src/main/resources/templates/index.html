@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <title>Document</title>
+    
+    <style>		
+		.Link {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+.Link1 {
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+	</style>
+</head>
+<body>
+
+    <header>
+        <h2>CREATE, SELECT, INSERT, UPDATE, DELETE</h2>
+        <h3>CRUD CRIADO COM SPRING BOOT, HTML, CSS E JAVASCRIPT</h3>
+</header>
+
+<div class="Insert">
+    <button class="Cadastrar"  onclick="cadastrar()">Cadastrar Cliente</button>
+</div>
+<div id="cadastrar">
+      
+</div>
+
+        <table>
+		
+        <tr>
+            <h2 class="Titulo">Dados cadastrados na tabela</h2>
+            
+        </tr>
+        <tr class="dad">
+            <th class="dados">Nome</th>
+            <th class="dados">Emaill</th>
+            <th class="dados">Senha</th>
+            <th class="dados">Telefone</th>
+            <th class="dados">Editar</th>
+            <th class="dados">Excluir</th>
+       </tr>
+       <tr th:each="player : ${users}">
+		   
+		   <td th:text="${player.nome}">nome</td>
+		   <td th:text="${player.email}">email</td>
+		   <td th:text="${player.senha}">senha</td>
+		   <td th:text="${player.telefone}">telefone</td>
+		       <td>
+                <a class="Link" th:href="@{/usuarios/editar/{id} (id=$(player.id}) }">Editar</a>
+            </td>
+            <td>
+                <a class="Link1" th:href="@{/usuarios/excluir/{id} (id=$(player.id}) }">Excluir</a>
+            </td>   
+		  
+     
+        </table>
+  <script>
+	  
+function cadastrar() {
+    let crud = document.getElementById("cadastrar");
+    crud.innerHTML = ` 
+    
+    <form action="">
+    <button class="fechar" onclick="deletar()">Fechar</button>
+    <h2>Insira os Dados do Cliente</h2>
+    <input type="text" name="" placeholder="Nome">                     
+    <input type="text" name="" placeholder="CPF">          
+     <input type="text" name="" placeholder="E-mail">
+     <button class="but">Salvar</button>
+     <button class="but1">Cancelar</button>
+    </form>`;
+}
+function deletar() {
+    let del = document.getElementById("cadastrar");
+    del.innerHTML = "";
+}
+
+
+
+  </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <title>Editar</title>
+    
+    <h1>Editar dados</h1>
+    
+    <form method="post"  th:action="@{/usuarios/editar}">
+    <h2>Nome</h2>
+    <input type="text" name="name" id="name"
+    th:name="name"
+    th:field="${player.name}">
+    
+    <h2>Email</h2>
+    <input type="text" name="email" id="email"
+    th:name="email"
+    th:field="${player.email}">
+    
+    <h2>Senha</h2>
+    <input type="text" name="senha" id="senha"
+    th:name="senha"
+    th:field="${player.senha}">
+    
+    <h2>Telefone</h2>
+    <input type="text" name="telefone" id="telefone"
+    th:name="telefone"
+    th:field="${player.telefone}">
+    
+    <input type="hidden" th:field="${player.id}">
+    <buttton type="submit" class="but">Salvar</buttton>
+</form>
+
+
+<h1>Criar cadastrar cliente</h1>
+
+
+
+   <h1>Editar dados</h1>
+    
+    <form method="post" th:action="@{/usuarios/registrar}">
+    <h2>Nome</h2>
+    <input type="text" name="name" id="name"
+    th:name="name"
+    th:field="${player.name}">
+    
+    <h2>Email</h2>
+    <input type="text" name="email" id="email"
+    th:name="email"
+    th:field="${player.email}">
+    
+    <h2>Senha</h2>
+    <input type="text" name="senha" id="senha"
+    th:name="senha"
+    th:field="${player.senha}">
+    
+    <h2>Telefone</h2>
+    <input type="text" name="telefone" id="telefone"
+    th:name="telefone"
+    th:field="${player.telefone}">
+    
+    <input type="hidden" th:field="${player.id}">
+    <buttton type="submit" class="but">Salvar</buttton>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

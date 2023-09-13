@@ -1,0 +1,115 @@
+header {
+width: 80%;
+background: rgb(107, 167, 125);
+text-align: center;
+color: rgb(232, 232, 240);
+height: 120px;
+margin: auto;
+margin-bottom: 100px;
+}
+.Cadastrar {
+    color: rgb(236, 236, 245);
+    font-size: 30px;
+    padding: 20px;
+    cursor: pointer;
+    background: rgb(107, 110, 112);
+    border-radius: 10px;
+}
+.Cadastrar:hover {
+    background: rgb(94, 177, 192);
+}
+.Insert {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+
+form {
+    width: 40%;
+    margin: auto;
+    border: 1px solid blue;
+    margin-bottom: 50px;
+    text-align: center;
+    height: auto;
+}
+input {
+    width: 50%;
+    height: 25px;
+    margin-bottom: 15px;
+   margin-left: 30px;
+   font-weight: bold;
+   
+}
+table {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+tr {
+    border: 1px solid blue;
+}
+.but {
+    background: green;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+    
+}
+.but1 {
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 50%;
+   
+}
+.but:hover {
+    background: blue;
+    cursor: pointer;
+}
+.but1:hover {
+    background: rgb(245, 162, 7);
+    cursor: pointer;
+}
+
+.Link {
+    background: blue;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+.Link1 {
+    background: red;
+    color: white;
+    text-decoration: none;
+    padding: 3px;
+}
+.Titulo {
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    font-size: 40px;
+}
+th {
+    border: 1px solid black;
+    margin-bottom: 2px;
+    padding: 3px;
+}
+.dados {
+    border: 1px solid red;
+    font-size: 20px;
+    color: blue;
+    height: 30px;   
+}
+.fechar {
+    background: red;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.fechar:hover {
+    background: orange;
+
+}
